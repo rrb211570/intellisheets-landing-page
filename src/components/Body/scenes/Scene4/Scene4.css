@@ -1,0 +1,13 @@
+#scene4__panel {
+    height: 100vh;
+}
+
+#scene4__quoteSlider{
+    margin: 5% 0 0 30%;
+    border: 6px solid gray;
+    border-radius: 41px;
+}
+
+#QUOTES {
+    border: 6px solid pink;
+}

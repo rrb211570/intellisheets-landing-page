@@ -1,0 +1,62 @@
+.centerContent {
+    position: absolute;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 2vmin);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.slideFromLeft {
+    animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideFromRight {
+    animation: slideFromRight 1.5s ease-out both;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(10%);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bulletIndicator {
+    margin: 0.5vw;
+    height: 0.8vw;
+    width: 0.8vw;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.8vw;
+}
+
+.bulletIndicator.selected {
+    background-color: #0075FF;
+    border: 1px solid #0075FF;
+}

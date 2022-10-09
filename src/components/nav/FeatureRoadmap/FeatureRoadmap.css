@@ -1,0 +1,13 @@
+#featureRoadmap {
+    color: black;
+    height: 100%;
+}
+
+.trapezoidBanner {
+    z-index: -1;
+    position: absolute;
+    width: 30%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 70px solid white;
+  }

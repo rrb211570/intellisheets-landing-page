@@ -1,0 +1,21 @@
+#scene0_stage1__panel {
+    height: 100vh;
+}
+
+#scene0_stage1__mainMessage {
+    position: absolute;
+    margin: 5% 0% 0% 20%;
+    width: 65%;
+    text-align: left;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 10vmin);
+}
+
+#scene0_stage1__companyBanners {
+    font-size: calc(10px + 4vmin);
+}
+
+#COMPANY_BANNERS {
+    border: 6px solid pink;
+}

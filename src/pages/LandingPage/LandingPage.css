@@ -1,0 +1,52 @@
+.landing-page {
+  text-align: center;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexRowBetween {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexRowRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.landing-page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 10vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}

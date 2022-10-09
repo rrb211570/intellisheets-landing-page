@@ -1,0 +1,25 @@
+#scene2__panel {
+    height: 100vh;
+}
+
+#scene2__builder {
+    position: absolute;
+    margin: 5% 0 0 10%;
+    height: 40vh;
+    width: 35vw;
+    background-color: gray;
+}
+
+#scene2__mainMessage {
+    position: absolute;
+    width: 40%;
+    margin: 5% 0 0 50%;
+    text-align: left;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 5vmin);
+}
+
+#DASHBOARD_BUILDER {
+    border: 6px solid pink;
+}

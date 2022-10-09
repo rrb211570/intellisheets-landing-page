@@ -1,0 +1,15 @@
+#scene0_stage2__panel {
+    height: 100vh;
+}
+
+#scene0_stage2__desktopDashboard {
+    position: absolute;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 20%;
+    background-color: gray;
+}
+
+#EXAMPLE_DASHBOARDS {
+    border: 6px solid pink;
+}

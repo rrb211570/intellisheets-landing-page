@@ -1,0 +1,25 @@
+#scene1__panel {
+    height: 100vh;
+}
+
+#scene1__mainMessage {
+    position: absolute;
+    margin: 5% 0 0 10%;
+    text-align: left;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 5vmin);
+    width: 40%;
+}
+
+#scene1__editor {
+    position: absolute;
+    background-color: gray;
+    margin: 5% 0 0 50%;
+    height: 40vh;
+    width: 40vw;
+}
+
+#EDITOR {
+    border: 6px solid pink;
+}
