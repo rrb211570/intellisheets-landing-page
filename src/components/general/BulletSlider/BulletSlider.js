@@ -32,7 +32,7 @@ function BulletSlider({ COMPONENT_HEADER, ELEM_ID, numElems, contents, styling, 
     };
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-between', ...styling.slider }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', ...styling.slider}}>
             <div style={{ ...styling.buttonLeft }}>
                 <ButtonLeft classId={COMPONENT_HEADER + 'sliderButtonLeft'} direction='left' handler={slideElemLeft}></ButtonLeft>
             </div>
@@ -52,12 +52,13 @@ function BulletSlider({ COMPONENT_HEADER, ELEM_ID, numElems, contents, styling, 
 }
 
 function triggerAnimation(elemID, direction, animationLeft, animationRight) {
-    document.querySelector(elemID).classList.remove(animationLeft);
-    document.querySelector(elemID).classList.remove(animationRight);
-    console.log(elemID)
+    let elem = document.querySelector(elemID);
+
+    elem.classList.remove(animationLeft);
+    elem.classList.remove(animationRight);
     window.requestAnimationFrame(function (time) { // re-triggers the animation frame
         window.requestAnimationFrame(function (time) {
-            document.querySelector(elemID).classList.add(direction == LEFT ? animationLeft : animationRight);
+            elem.classList.add(direction == LEFT ? animationLeft : animationRight);
         });
     });
 }

@@ -20,6 +20,13 @@
   justify-content: space-between;
 }
 
+.flexRowAround{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .flexRowRight {
   display: flex;
   flex-direction: row;
@@ -35,18 +42,12 @@
   font-size: calc(10px + 2vmin);
 }
 
-.fixed {
-  position: fixed;
+@font-face {
+  font-family: 'Century Gothic';
+  src: local('Century Gothic'), url(../../fonts/CenturyGothic.ttf) format('truetype');
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
+@font-face {
+  font-family: 'Graphik Web Regular';
+  src: local('Graphik Web Regular'), url(../../fonts/GraphikWebRegular.ttf) format('truetype');
 }

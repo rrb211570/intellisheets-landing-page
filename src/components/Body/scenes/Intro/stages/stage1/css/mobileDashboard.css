@@ -1,0 +1,42 @@
+#intro_stage1__mobileDashboard {
+    height: calc(40vh + 16vw);
+    width: calc(19vh + 8vw);
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px white, 0 0 0 6px #171717, 0 0 0 7px #374151;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#intro_stage1__mobileDashboardImg {
+    height: calc(100% - 12vh);
+    width: auto;
+    padding: 4vh 0 8vh 0;
+}
+
+.mobileDashboard {
+    position: absolute;
+    bottom: calc(-120vh);
+    left: 65vw;
+    opacity: 0;
+}
+
+.mobileDashboardTransition {
+    transition: 1s all ease-out;
+}
+
+.mobileDashboard.reveal {
+    transform: translateX(-2vw);
+    opacity: 1;
+}
+
+.mobileDashboard.fix {
+    position: fixed;
+    top: calc((100vh - 60vh - 9px) / 2);
+    left: 65vw;
+}
+
+.mobileDashboard.releaseBottom{
+    bottom: calc(-200vh + ((100vh - 60vh - 9px) / 2));
+}

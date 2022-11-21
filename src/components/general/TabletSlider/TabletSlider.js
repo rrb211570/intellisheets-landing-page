@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { RoundedArrowButton } from '../../';
+import { RoundedArrowButton } from '../..';
 import { BulletSlider, SLIDE_FROM_LEFT, SLIDE_FROM_RIGHT } from '../BulletSlider/BulletSlider';
-import './MobileSlider.css'
+import './TabletSlider.css'
 
 let styling = {
     slider: { height: '65vh', width: '15vw', padding: '7% 0 0 0', backgroundColor: 'white', border: '', borderRadius: '30px', overflowX: 'hidden', zIndex: '3' },
@@ -12,7 +12,7 @@ let styling = {
 
 let [animationLeft, animationRight] = [SLIDE_FROM_LEFT, SLIDE_FROM_RIGHT];
 
-function MobileSlider(props) {
+function TabletSlider(props) {
     const { id, classNames, contents } = props;
 
     useEffect(() => {
@@ -20,9 +20,9 @@ function MobileSlider(props) {
     }, []);
 
     return (
-        <div id={id + 'mobileSlider'} className={classNames + ' mobileSlider'}>
-            {BulletSlider({ COMPONENT_HEADER: id, ELEM_ID: id + 'mobileImg', numElems: contents.length, contents: contents, styling: styling, ButtonLeft: RoundedArrowButton, ButtonRight: RoundedArrowButton, animationLeft: animationLeft, animationRight: animationRight })}
+        <div id={id + 'tabletSlider'} className={classNames + ' tabletSlider'}>
+            {BulletSlider({ COMPONENT_HEADER: id, ELEM_ID: id + 'tabletImg', numElems: contents.length, contents: contents, styling: styling, ButtonLeft: RoundedArrowButton, ButtonRight: RoundedArrowButton, animationLeft: animationLeft, animationRight: animationRight })}
         </div>
     );
 }
-export default MobileSlider;
+export default TabletSlider;

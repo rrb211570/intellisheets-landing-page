@@ -1,0 +1,51 @@
+#intro_stage1__desktopDashboard {
+    height: calc(60vh + 15vw);
+    width: calc(80vh + 20vw);
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px white, 0 0 0 12px #171717, 0 0 0 13px #374151;
+    overflow: hidden;
+}
+
+#intro_stage1__desktopDashboardImg {
+    width: calc(100% - 4vh);
+    height: auto;
+    padding: 3vh 2vh;
+}
+
+.desktopDashboard {
+    position: absolute;
+    left: calc((100vw - 80vh - 20vw)/2);
+    opacity: 0;
+    transform: translateX(-5vh);
+}
+
+.desktopDashboardTransition {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.desktopDashboard.reveal {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.desktopDashboard.releaseTop{
+    /* (screen height - dashboard height (including border)) / 2 = bottom/top screen offset
+        width = max(45vw + 10rem, 30rem)
+        height = width / 1.42345465
+        top + bottom border = 12px
+        screen height = 50%   // since parent div's height = 2x screen height
+        i.e. 
+     */
+    margin-top: calc((100vh - calc(60vh + 15vw) - 1px) / 2);
+}
+
+.desktopDashboard.fix{
+    position: fixed;
+    top: calc((100vh - calc(60vh + 15vw) - 1px) / 2);
+}
+
+.desktopDashboard.releaseBottom {
+    bottom: calc(-200vh + ((100vh - calc(60vh + 15vw) + 12px) / 2 - 6px));
+}

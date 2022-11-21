@@ -1,0 +1,14 @@
+.tabletSlider {
+    background-color: white;
+    border: 6px solid gray;
+    border-radius: 35px;
+}
+
+.bulletIndicator {
+    margin: 0.5vw;
+    height: 0.5vw;
+    width: 0.5vw;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+}

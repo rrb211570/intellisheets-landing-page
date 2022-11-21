@@ -9,11 +9,11 @@
     opacity: 0;
 }
 
-.slideFromLeft {
-    animation: slideFromLeft 1.5s ease-out forwards;
+.slideFromLeft1 {
+    animation: slideFromLeft1 1.5s ease-out forwards;
 }
 
-@keyframes slideFromLeft {
+@keyframes slideFromLeft1 {
     0% {
         transform: translateX(-10%);
     }
@@ -28,11 +28,11 @@
     }
 }
 
-.slideFromRight {
-    animation: slideFromRight 1.5s ease-out both;
+.slideFromRight1 {
+    animation: slideFromRight1 1.5s ease-out both;
 }
 
-@keyframes slideFromRight {
+@keyframes slideFromRight1 {
     0% {
         transform: translateX(10%);
     }

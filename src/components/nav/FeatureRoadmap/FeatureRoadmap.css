@@ -6,8 +6,8 @@
 .trapezoidBanner {
     z-index: -1;
     position: absolute;
-    width: 30%;
+    width: 25%;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-top: 70px solid white;
+    border-top: 45px solid white;
   }

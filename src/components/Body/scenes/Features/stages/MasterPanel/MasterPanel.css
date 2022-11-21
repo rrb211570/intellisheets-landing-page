@@ -1,0 +1,30 @@
+#masterPanel {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+}
+
+#masterPanel__panel {
+    position: absolute;
+    margin: 20vh 10vw 0 10vw;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#masterPanel__mainMessage {
+    width: 40%;
+    text-align: left;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 5vmin);
+}
+
+#masterPanel__img {
+    height: 40vh;
+    width: 40vw;
+    background-color: gray;
+}

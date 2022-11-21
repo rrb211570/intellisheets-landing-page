@@ -1,0 +1,29 @@
+#editor{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+}
+#editor__panel {
+    position: absolute;
+    margin: 20vh 10vw 0 10vw;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+#editor__mainMessage {
+    text-align: left;
+    font-family: Graphik Web Regular;
+    font-weight: 1000;
+    font-size: calc(10px + 5vmin);
+    width: 40%;
+}
+
+#editor__img {
+    background-color: gray;
+    height: 40vh;
+    width: 40vw;
+}

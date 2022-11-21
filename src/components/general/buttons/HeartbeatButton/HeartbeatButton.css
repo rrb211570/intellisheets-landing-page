@@ -1,13 +1,34 @@
-.heartbeatBtn {
+.heartbeatBtn__normal {
     height: calc(10px + 5vmin);
+    width: calc(31px + 10vmin);
+    font-size: calc(7px + 0.7vmin);
     padding: 0px 16px;
-    border: 3px solid black;
-    background-color: #C7FFD1;
+    background-color: #ffedd5;
+    border: 2px solid black;
     border-radius: 8px;
+    transition: font-size 0.05s ease-in;
 }
 
-.heartbeatBtn:hover {
-    background-color: white;
-    border: 4px solid black;
-    padding: 0px 15px;
+.heartbeatBtn__normal:hover {
+    font-size: calc(7px + 0.9vmin);
+}
+
+.heartbeatBtn__large {
+    height: calc(15px + 7.5vmin);
+    width: calc(47px + 22.5vmin);
+    font-size: calc(10.5px + 1.35vmin);
+    padding: 0px 24px;
+    background-color: rgb(32, 32, 32);
+    color: #fde68a;
+    border: 1px solid #fde68a;
+    border-radius: 16px;
+    transition: box-shadow 0.05s ease, background-color 0.05s ease, color 0.05s ease;
+}
+
+.heartbeatBtn__large:hover {
+    color: rgb(26, 26, 26);
+    background-color: #fde68a;
+    border: none;
+    padding: 1px;
+    box-shadow: 0 0 15px #d35400;
 }

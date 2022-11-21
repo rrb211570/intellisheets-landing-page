@@ -8,16 +8,16 @@ function FeatureRoadmap() {
     }, []);
 
     return (
-        <div style={{height: '100%', width: '100%' }}>
+        <div style={{ height: '100%', width: '100%' }}>
             <div className='trapezoidBanner'></div>
-            <div id='featureRoadmap' className="flexRowRight" style={{ width: '100%' }}>
-                <p style={{ paddingRight: '5%', margin: '0px' }}>Feature Roadmap:</p>
-                <div style={{ paddingRight: '2%' }}>
-                    <HeartbeatButton textValue='Alpha 2022' />
+            <div id='featureRoadmap' className="flexRowAround" style={{ width: '100%' }}>
+                <div style={{ paddingLeft: '15%' }}>
+                    <HeartbeatButton textValue='Alpha 2022' size='normal' />
                 </div>
-                <HeartbeatButton textValue='Beta 2023' />
+                <div style={{ paddingRight: '15%' }}>
+                    <HeartbeatButton textValue='Beta 2023' size='normal' />
+                </div>
             </div>
-
         </div>
     );
 }
