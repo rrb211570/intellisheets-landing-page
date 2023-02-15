@@ -1,11 +1,17 @@
-.waves {
+.ending__waves {
     position: relative;
     width: 100%;
     height: 15vh;
+    top: 80vh;
     margin-bottom: -7px;
     /*Fix for safari gap*/
     min-height: 100px;
     max-height: 150px;
+    transition: top 1s ease-out 0.5s;
+}
+
+.ending__waves.rise{
+    top: 0;
 }
 
 .parallax>use {

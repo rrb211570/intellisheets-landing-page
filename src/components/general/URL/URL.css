@@ -1,0 +1,15 @@
+.URL__div{
+    margin: 0;
+}
+.URL__p {
+    margin: 0;
+}
+
+.URL__link {
+    color: #ffb24e;
+    text-decoration: none;
+}
+
+.URL__link:hover {
+    color: #ffca84;
+}

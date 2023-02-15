@@ -1,3 +1,24 @@
-#ending{
-    height: 100vh;
+#ending {
+    position: relative;
+    height: 215vh;
+    overflow: hidden;
+}
+
+#cloudsDiv {
+    height: 65vh;
+    width: 100vw;
+}
+
+.cloudsDiv {
+    position: absolute;
+    transition: 1s all ease;
+}
+
+.cloudsDiv.fix {
+    position: fixed;
+    top: 0;
+}
+
+.cloudsDiv.rotate {
+    rotate: 180deg;
 }

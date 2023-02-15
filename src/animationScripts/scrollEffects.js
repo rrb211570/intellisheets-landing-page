@@ -89,7 +89,7 @@ let animations = [
         sectionID: 'EDITOR',
         triggerPos: 140,
         animationElems: {
-            editor__mainMessage: {
+            editor__mainMsg: {
                 prev: { classesToAdd: [], classesToRemove: ['active'] },
                 next: { classesToAdd: ['active'], classesToRemove: [] }
             },
@@ -104,7 +104,7 @@ let animations = [
         sectionID: 'DASHBOARD_BUILDER',
         triggerPos: 140,
         animationElems: {
-            dashboardBuilder__mainMessage: {
+            dashboardBuilder__mainMsg: {
                 prev: { classesToAdd: [], classesToRemove: ['active'] },
                 next: { classesToAdd: ['active'], classesToRemove: [] }
             },
@@ -119,7 +119,7 @@ let animations = [
         sectionID: 'MASTER_PANEL',
         triggerPos: 140,
         animationElems: {
-            masterPanel__mainMessage: {
+            masterPanel__mainMsg: {
                 prev: { classesToAdd: [], classesToRemove: ['active'] },
                 next: { classesToAdd: ['active'], classesToRemove: [] }
             },
@@ -132,30 +132,64 @@ let animations = [
     },
     {
         sectionID: 'QUOTES',
-        triggerPos: 140,
+        triggerPos: 210,
         animationElems: {
-            quotes__panel: {
-                prev: { classesToAdd: [], classesToRemove: ['active'] },
-                next: { classesToAdd: ['active'], classesToRemove: [] }
+            quotes__box: {
+                prev: { classesToAdd: [], classesToRemove: ['reveal'] },
+                next: { classesToAdd: ['reveal'], classesToRemove: [] }
             }
         },
         scriptElems: {}
     },
     {
-        sectionID: 'SIGNUP',
-        triggerPos: 140,
+        sectionID: 'QUOTES',
+        triggerPos: 150,
         animationElems: {
-            signUp__panel: {
-                prev: { classesToAdd: [], classesToRemove: ['active'] },
-                next: { classesToAdd: ['active'], classesToRemove: [] }
+            cloudsDiv: {
+                prev: { classesToAdd: [], classesToRemove: ['fix'] },
+                next: { classesToAdd: ['fix'], classesToRemove: [] }
+            },
+            quotes__box: {
+                prev: { classesToAdd: [], classesToRemove: ['fix'] },
+                next: { classesToAdd: ['fix'], classesToRemove: [] }
             }
         },
         scriptElems: {}
     },
+    {
+        sectionID: 'QUOTES',
+        triggerPos: 90,
+        animationElems: {
+            quotes__box: {
+                prev: { classesToAdd: ['reveal'], classesToRemove: [] },
+                next: { classesToAdd: [], classesToRemove: ['reveal'] }
+            },
+        },
+        scriptElems: {}
+    },
+    {
+        sectionID: 'SIGNUP',
+        triggerPos: 80,
+        animationElems: {
+            signUp__panel: {
+                prev: { classesToAdd: [], classesToRemove: ['slow', 'reveal'] },
+                next: { classesToAdd: ['slow', 'reveal'], classesToRemove: [] }
+            },
+            boat: {
+                prev: { classesToAdd: [], classesToRemove: ['rise'] },
+                next: { classesToAdd: ['rise'], classesToRemove: [] }
+            },
+            ending__waves: {
+                prev: { classesToAdd: [], classesToRemove: ['rise'] },
+                next: { classesToAdd: ['rise'], classesToRemove: [] }
+            },
+        },
+        scriptElems: {}
+    }
 ];
 
 function choreograph() {
-    console.log(sectionIndex);
+    //console.log(sectionIndex);
     if (applyPrevTriggers() == NO_EVENT) {
         applyNextTriggers();
     }
@@ -179,6 +213,7 @@ function applyNextTriggers() {
     if (sectionIndex < animations.length - 1 && animations.length > 0) {
         let currentPos = getDistanceOfWindowToEndpoint(sectionIndex + 1);
         let triggerPos = getDistanceOfTriggerToEndpoint(sectionIndex + 1);
+        //console.log(currentPos + ' ' + triggerPos);
         if (triggerPos > currentPos) {
             applyAnimations(sectionIndex + 1, 'next');
             applyScripts(sectionIndex + 1, 'next');
@@ -227,7 +262,7 @@ function applyScripts(sectionIndex, direction) {
 
 function callFunctions(elemID, endpointID, functions) {
     for (let i = 0; i < functions.length; ++i) {
-        console.log('applying script');
+        //console.log('applying script');
         functions[i](elemID, endpointID);
     }
 }

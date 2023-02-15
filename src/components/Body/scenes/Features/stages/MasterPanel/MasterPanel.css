@@ -15,12 +15,23 @@
     background-color: white;
 }
 
-#masterPanel__mainMessage {
+#masterPanel__msg {
     width: 40%;
     text-align: left;
     font-family: Graphik Web Regular;
+}
+
+#masterPanel__mainMsg {
     font-weight: 1000;
     font-size: calc(10px + 5vmin);
+    margin: 0;
+}
+
+#masterPanel__subMsg {
+    text-align: center;
+    font-weight: 1000;
+    font-size: calc(10px + 2vmin);
+    color: gray;
 }
 
 #masterPanel__img {

@@ -24,8 +24,10 @@ let [animationLeft, animationRight] = [SLIDE_FROM_LEFT, SLIDE_FROM_RIGHT];
 function Quotes() {
     return (
         <div id='quotes' className='quotes'>
-            <div id='quotes__panel' className='reveal' style={{ width: '40vw' }}>
-                {BulletSlider({ COMPONENT_HEADER: COMPONENT_HEADER, ELEM_ID: ELEM_ID, numElems: 3, contents: contents, styling: styling, ButtonLeft: RoundedArrowButton, ButtonRight: RoundedArrowButton, animationLeft: animationLeft, animationRight: animationRight })}
+            <div id='quotes__panel'>
+                <div id='quotes__box' className='quotes__box hidden' style={{ width: '40vw' }}>
+                    {BulletSlider({ COMPONENT_HEADER: COMPONENT_HEADER, ELEM_ID: ELEM_ID, numElems: 3, contents: contents, styling: styling, ButtonLeft: RoundedArrowButton, ButtonRight: RoundedArrowButton, animationLeft: animationLeft, animationRight: animationRight })}
+                </div>
             </div>
             <div id='QUOTES'></div>
         </div >

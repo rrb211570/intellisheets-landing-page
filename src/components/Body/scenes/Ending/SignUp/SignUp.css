@@ -1,3 +1,29 @@
-#signup{
-    position: absolute;
+#signUp {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
 }
+
+.signUp__panel {
+    position: absolute;
+    top: 0vh;
+    left: 45vw;
+    transition: all 0.8s ease;
+}
+
+.signUp__panel.slow {
+    transition: all 3s ease;
+}
+
+.signUp__panel.reveal {
+    opacity: 1;
+    top: -26vh;
+}
+
+#signUp__msg {
+    font-family: 'Century Gothic';
+    font-size: 4rem;
+}
+
+#signUp__btn {}

@@ -1,4 +1,5 @@
 import { InitialNav, Body} from '../../components';
+import Footer from '../../components/Footer/Footer';
 import './LandingPage.css';
 
 function LandingPage() {
@@ -9,6 +10,7 @@ function LandingPage() {
         <InitialNav/>
       </header>
       <Body/>
+      <Footer/>
     </div>
   );
 }

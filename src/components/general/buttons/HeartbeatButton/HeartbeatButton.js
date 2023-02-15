@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import './HeartbeatButton.css'
 
 function HeartbeatButton(props) {
-    let { textValue, styling, size } = props;
+    let { id, textValue, styling, size } = props;
 
     useEffect(() => {
 
     }, []);
 
     return (
-        <div style={styling != null ? styling.positioning : null}>
+        <div id={id} style={styling != null ? styling.positioning : null}>
             <button onClick={navToLink} className={'heartbeatBtn__' + size}>
                 <p style={{ margin: '0', fontFamily: 'Century Gothic' }}>{textValue}</p>
             </button>

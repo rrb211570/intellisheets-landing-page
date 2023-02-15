@@ -1,0 +1,123 @@
+$orange-sail: orange;
+$brown-boat: rgb(99, 55, 0);
+
+.box-drift {
+    position: absolute;
+    width: 100px;
+    height: 90vh;
+    top: 200vh;
+    left: 10%; // ani initial
+    // border: solid 4px red;
+    // animation: doDrift 16s infinite;
+    transition: top 1s ease-out 0.5s;
+}
+
+.box-drift.rise {
+    top: 125vh;
+}
+
+.box-bob {
+    position: absolute;
+    top: 30%; // ani initial
+    width: 500px;
+    background: none;
+    // border: solid 4px black;
+    animation: bob 10s infinite;
+}
+
+.box-pitch {
+    height: 500px;
+    // border: solid 4px blue;
+    animation: pitch 5s infinite;
+}
+
+.left-sail {
+    background: $orange-sail;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.right-sail {
+    background: $orange-sail;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 45%;
+    height: 55%;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.hull {
+    background: $brown-boat;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 79% 100%, 18% 100%);
+    clip-path: polygon(0 0, 100% 0, 79% 100%, 18% 100%);
+}
+
+@keyframes doDrift {
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: 10%;
+    }
+
+    20% {
+        left: 20%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    80% {
+        left: 80%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
+
+@keyframes bob {
+    0% {
+        top: 30%;
+    }
+
+    50% {
+        top: 22%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+@keyframes pitch {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}

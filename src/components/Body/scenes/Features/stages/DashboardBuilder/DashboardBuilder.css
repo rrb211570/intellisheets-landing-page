@@ -14,12 +14,23 @@
     background-color: white;
 }
 
-#dashboardBuilder__mainMessage {
+#dashboardBuilder__msg {
     width: 40%;
     text-align: left;
     font-family: Graphik Web Regular;
+}
+
+#dashboardBuilder__mainMsg {
     font-weight: 1000;
     font-size: calc(10px + 5vmin);
+    margin: 0;
+}
+
+#dashboardBuilder__subMsg {
+    text-align: center;
+    font-weight: 1000;
+    font-size: calc(10px + 2vmin);
+    color: gray;
 }
 
 #dashboardBuilder__img {
