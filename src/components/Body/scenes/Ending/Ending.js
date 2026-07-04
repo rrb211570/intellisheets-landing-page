@@ -69,12 +69,12 @@ function Ending() {
                 </defs>
                 <g className="parallax">
                     <use xlinkHref="#gentle-wave" x="48" y="-3" fill="#fff" />
-                    <use xlinkHref="#gentle-wave" x="48" y="-5" fill="rgba(76, 29, 149, 0.3)" />
-                    <use xlinkHref="#gentle-wave" x="48" y="-7" fill="rgba(76, 29, 149, 0.5)" />
-                    <use xlinkHref="#gentle-wave" x="48" y="-9" fill="rgba(76, 29, 149, 0.7)" />
+                    <use xlinkHref="#gentle-wave" x="48" y="-5" fill="rgba(0, 33, 71, 0.3)" />
+                    <use xlinkHref="#gentle-wave" x="48" y="-7" fill="rgba(0, 33, 71, 0.5)" />
+                    <use xlinkHref="#gentle-wave" x="48" y="-9" fill="rgba(0, 33, 71, 0.7)" />
                 </g>
             </svg>
-            <div style={{ position: 'absolute', height: '5vh', backgroundColor: 'rgba(76, 29, 149, 0.9)' }}></div>
+            <div style={{ position: 'absolute', height: '5vh', backgroundColor: 'rgba(0, 33, 71, 1.0)' }}></div>
         </div>
     );
 }
