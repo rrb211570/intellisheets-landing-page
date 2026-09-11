@@ -19,15 +19,15 @@
     font-size: calc(10.5px + 1.35vmin);
     padding: 0px 24px;
     background-color: rgb(32, 32, 32);
-    color: #fde68a;
-    border: 1px solid #fde68a;
+    color: #FBF9F0;
+    border: 1px solid #FBF9F0;
     border-radius: 16px;
     transition: box-shadow 0.05s ease, background-color 0.05s ease, color 0.05s ease;
 }
 
 .heartbeatBtn__large:hover {
     color: rgb(26, 26, 26);
-    background-color: #fde68a;
+    background-color: #FBF9F0;
     border: none;
     padding: 1px;
     box-shadow: 0 0 15px #d35400;

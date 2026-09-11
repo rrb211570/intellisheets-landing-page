@@ -1,4 +1,4 @@
-import { revealPrev, revealNext } from "../components/Body/scenes/Intro/stages/stage1/Stage1";
+import { revealPrev, revealNext, resetRevealedVideo } from "../components/Body/scenes/Intro/stages/stage1/Stage1";
 
 // scrollEffects.js
 const NO_EVENT = 0;
@@ -26,7 +26,12 @@ let animations = [
                 next: { classesToAdd: ['reveal', 'fix'], classesToRemove: ['releaseTop'] }
             }
         },
-        scriptElems: {}
+        scriptElems: {
+            intro_stage1__desktopDashboard: {
+                prev: { functions: [] },
+                next: { functions: [resetRevealedVideo] }
+            }
+        }
     },
     {
         sectionID: 'EXAMPLE_DASHBOARDS',
